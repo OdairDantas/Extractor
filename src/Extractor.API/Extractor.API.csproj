@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dotnet-framework-sonarscanner" Version="4.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Api.Analyzers" Version="2.2.6" />
+    <PackageReference Include="MSBuild.SonarQube.Runner.Tool" Version="4.8.0" />
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="8.14.0.22654">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Extractor.Application\Extractor.Application.csproj" />
+    <ProjectReference Include="..\Extractor.Infrastructure\Extractor.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>
